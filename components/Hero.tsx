@@ -35,7 +35,7 @@ export default function Hero() {
       <div className="absolute top-[7.5rem] md:top-[8.5rem] bottom-0 right-0 w-[54vw] bg-rose-100 rounded-l-3xl hidden md:block" />
 
       {/* Text content — stays dentro del contenedor centrado */}
-      <div className="relative h-full max-w-7xl mx-auto px-6 flex items-center">
+      <div className="relative h-full w-full px-8 md:px-12 xl:px-20 2xl:px-32 flex items-center">
         <div className="w-full md:w-1/2 space-y-3">
           {/* Eyebrow */}
           <div className="animate-fade-in-up">
