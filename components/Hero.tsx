@@ -30,7 +30,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative h-screen bg-cream overflow-hidden pt-20 md:pt-24">
+    <section id="hero" className="relative h-screen bg-cream overflow-hidden pt-20 md:pt-24">
       {/* Background decorative elements */}
       <div className="absolute top-[7.5rem] md:top-[8.5rem] bottom-0 right-0 w-[54vw] bg-rose-100 rounded-l-3xl hidden md:block" />
 

@@ -85,6 +85,23 @@
 .reveal-stagger.visible > *:nth-child(5) { opacity: 1; transform: translateY(0); transition-delay: 400ms; }
 .reveal-stagger.visible > *:nth-child(6) { opacity: 1; transform: translateY(0); transition-delay: 500ms; }
 
+/* Compensar Windows Display Scaling 125% en notebooks (1280px–1699px CSS) */
+@media screen and (min-width: 1280px) and (max-width: 1699px) {
+  body {
+    zoom: 0.8;
+  }
+  #hero {
+    height: 125vh;
+  }
+  #hero h1 {
+    font-size: 4.5rem;
+    line-height: 1.05;
+  }
+  #hero h1 > span:last-child {
+    font-size: 3.5rem;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .animate-fade-in-up,
   .reveal,
