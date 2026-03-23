@@ -73,7 +73,7 @@ export default function Testimonials() {
       ref={sectionRef}
       className="py-24 bg-surface/30 overflow-hidden"
     >
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-4 md:px-6 xl:px-10 2xl:px-16">
         {/* Header */}
         <div className="reveal mb-16 text-center max-w-2xl mx-auto">
           <span className="inline-block mb-3 text-accent font-body font-semibold text-sm uppercase tracking-widest">

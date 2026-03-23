@@ -31,7 +31,7 @@ export default function ContactForm() {
 
   return (
     <section ref={sectionRef} className="py-24 bg-surface/30">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-4 md:px-6 xl:px-10 2xl:px-16">
         <div className="grid md:grid-cols-2 gap-16 items-center">
           {/* Left info */}
           <div className="space-y-8">

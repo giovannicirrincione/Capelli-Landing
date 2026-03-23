@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <footer id="contacto" className="bg-[#5a2e42] text-white">
       {/* Main footer content */}
-      <div className="max-w-7xl mx-auto px-6 py-16">
+      <div className="max-w-7xl mx-auto px-4 md:px-6 xl:px-10 2xl:px-16 py-16">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand column */}
           <div className="space-y-5">
@@ -199,7 +199,7 @@ export default function Footer() {
 
       {/* Bottom bar */}
       <div className="border-t border-white/10">
-        <div className="max-w-7xl mx-auto px-6 py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div className="max-w-7xl mx-auto px-4 md:px-6 xl:px-10 2xl:px-16 py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="font-body text-xs text-white/40">
             © {currentYear} PediSalud Clínica Pediátrica. Todos los derechos reservados.
           </p>

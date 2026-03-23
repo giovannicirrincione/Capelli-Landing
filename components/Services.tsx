@@ -77,7 +77,7 @@ export default function Services() {
 
   return (
     <section id="servicios" ref={sectionRef} className="py-24 bg-cream">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-4 md:px-6 xl:px-10 2xl:px-16">
         {/* Asymmetric header */}
         <div className="grid md:grid-cols-2 gap-8 mb-16 items-end">
           <div className="reveal">
