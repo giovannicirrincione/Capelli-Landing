@@ -112,7 +112,7 @@ export default function Hero() {
       <div className="absolute top-0 right-0 bottom-0 w-[52vw] hidden md:block pt-24 pb-6 pl-10">
         <div className="relative h-full rounded-l-3xl overflow-hidden">
           <Image
-            src="/Herofoto.png"
+            src="/heroFoto.png"
             alt="Médico pediatra con niño"
             fill
             className="object-cover"
