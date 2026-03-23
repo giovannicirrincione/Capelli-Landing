@@ -35,7 +35,7 @@ export default function Hero() {
       <div className="absolute top-[7.5rem] md:top-[8.5rem] bottom-0 right-0 w-[54vw] bg-rose-100 rounded-l-3xl hidden md:block" />
 
       {/* Text content — stays dentro del contenedor centrado */}
-      <div className="relative h-full w-full px-8 md:px-12 xl:px-20 2xl:px-32 flex items-center">
+      <div className="relative h-full w-full px-4 md:px-6 xl:px-10 2xl:px-16 flex items-center">
         <div className="w-full md:w-1/2 space-y-3">
           {/* Eyebrow */}
           <div className="animate-fade-in-up">
@@ -46,7 +46,7 @@ export default function Hero() {
           </div>
 
           {/* Headline */}
-          <h1 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-primary leading-[1.05]">
+          <h1 className="font-display text-3xl md:text-4xl lg:text-5xl min-[1700px]:text-6xl font-bold text-primary leading-[1.05]">
             <span className="block animate-fade-in-up">Cuidado</span>
             <span className="block animate-fade-in-up animate-delay-120 italic font-light text-accent">
               Pediátrico
@@ -54,13 +54,13 @@ export default function Hero() {
             <span className="block animate-fade-in-up animate-delay-240">
               de Excelencia
             </span>
-            <span className="block animate-fade-in-up animate-delay-360 text-2xl md:text-3xl lg:text-4xl text-[#1A1A1A]">
+            <span className="block animate-fade-in-up animate-delay-360 text-2xl md:text-3xl lg:text-4xl min-[1700px]:text-5xl text-[#1A1A1A]">
               para tus Hijos
             </span>
           </h1>
 
           {/* Subtext */}
-          <p className="animate-fade-in-up animate-delay-480 font-body text-sm md:text-base text-muted leading-relaxed max-w-md">
+          <p className="animate-fade-in-up animate-delay-480 font-body text-sm md:text-base min-[1700px]:text-lg text-muted leading-relaxed max-w-md min-[1700px]:max-w-xl">
             Profesionales de mas de 10 años de experiencia acompañando el crecimiento sano de niños y niñas.
             Un equipo comprometido con la salud y el
             bienestar de tus niños.
@@ -72,7 +72,7 @@ export default function Hero() {
               href="https://mrturno.com/p/@capelli"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-7 py-3 rounded-full bg-accent text-white font-body font-bold text-sm hover:scale-105 hover:shadow-xl hover:shadow-accent/30 transition-all duration-200"
+              className="inline-flex items-center gap-2 px-7 py-3 min-[1700px]:px-9 min-[1700px]:py-4 rounded-full bg-accent text-white font-body font-bold text-sm min-[1700px]:text-base hover:scale-105 hover:shadow-xl hover:shadow-accent/30 transition-all duration-200"
             >
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
@@ -81,7 +81,7 @@ export default function Hero() {
             </a>
             <a
               href="tel:0261157261890"
-              className="inline-flex items-center gap-2 px-7 py-3 rounded-full border-2 border-primary text-primary font-body font-bold text-sm hover:bg-primary hover:text-white transition-all duration-200"
+              className="inline-flex items-center gap-2 px-7 py-3 min-[1700px]:px-9 min-[1700px]:py-4 rounded-full border-2 border-primary text-primary font-body font-bold text-sm min-[1700px]:text-base hover:bg-primary hover:text-white transition-all duration-200"
             >
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
@@ -97,11 +97,11 @@ export default function Hero() {
           >
             {stats.map((stat) => (
               <div key={stat.label} className="space-y-0.5">
-                <p className="font-display text-xl font-bold text-primary flex items-center gap-1">
+                <p className="font-display text-xl min-[1700px]:text-2xl font-bold text-primary flex items-center gap-1">
                   {stat.value}
                   {"star" in stat && <StarSolid className="w-4 h-4 text-accent" />}
                 </p>
-                <p className="font-body text-xs text-muted leading-snug">{stat.label}</p>
+                <p className="font-body text-xs min-[1700px]:text-sm text-muted leading-snug">{stat.label}</p>
               </div>
             ))}
           </div>
